@@ -6,6 +6,7 @@ class PostsController < ApplicationController
     Post.create(content: params[:content])
     redirect_to action: :index
 end
+<<<<<<< HEAD
 def checked
   post = Post.find(params[:id])
   if post.checked
@@ -16,5 +17,7 @@ def checked
   item = Post.find(params[:id])
   render json: { post: item }
      end
+=======
+>>>>>>> parent of a106f4a... 既読機能のサーバーサイド実装
 
 end
